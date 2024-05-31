@@ -1,2 +1,2 @@
 # Javascript-Dasar
-Belajar Javascript
+Belajar Javascript Menggunakan HTML
