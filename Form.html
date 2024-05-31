@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<script>
+    function tampilkan(){
+     
+      var nama_kota=document.getElementById("form1").select1.value;
+      var p_kontainer=document.getElementById("container");
+     
+      if (nama_kota=="jakarta")
+        {
+            p_kontainer.innerHTML="Jakarta Ibu kota Republik Indonesia";
+        }
+      else if (nama_kota=="bandung")
+        {
+            p_kontainer.innerHTML="Bandung kota kembang";
+        }
+      else if (nama_kota=="bogor")
+        {
+            p_kontainer.innerHTML="Bogor kota hujan";
+        }
+    }
+</script>
+</head>
+<body>
+    <h2>Menampilkan Hasil Form HTML dengan JavaScript</h2>
+     
+    <form id="form1" name="form1" onsubmit="return false">
+      <label for="select1">Pilih Kota: </label>
+      <select id="select1" name="select1">
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+        <option value="bogor">Bogor</option>
+      </select>
+      <input type="submit" value="Tampilkan Keterangan" onclick="tampilkan()">
+    </form>
+     
+    <p id="container"></p>
+</body>
